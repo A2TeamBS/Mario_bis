@@ -3,6 +3,7 @@ import { OBJLoader } from 'https://cdn.jsdelivr.net/npm/three@0.134.0/examples/j
 
 const scene = new THREE.Scene();
 
+
 const camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 0.1, 1000);
 camera.position.z = 5;
 
