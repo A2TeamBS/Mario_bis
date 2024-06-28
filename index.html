@@ -9,12 +9,20 @@
     </style>
     <title>Three.js OBJLoader Example</title>
     <link rel="shortcut icon" href="#">
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.138.0/build/three.module.js",
+                "OBJLoader": 'https://unpkg.com/three@0.134.0/examples/jsm/loaders/OBJLoader.js"
+            }
+        }
+    </script>
 </head>
 <body>
     <canvas id="canvas"></canvas>
     <script type="module">
         import * as THREE from './js/libs/three.module.js';
-        import { OBJLoader } from './js/libs/OBJLoader.js';
+        import { OBJLoader } from 'OBJLoader';
 
         // scene
         const scene = new THREE.Scene();
