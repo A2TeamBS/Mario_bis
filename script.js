@@ -30,7 +30,7 @@ objLoader.load(
     }
 );
 
-const light = new THREE.PointLight(0xfffff, 1);
+const light = new THREE.PointLight(0xfffff, 0.5);
 light.position.set(-15, -15, 2);
 scene.add(light);
 
@@ -72,7 +72,7 @@ const edgesObject = new THREE.LineSegments(edges, edgeMaterial);
 const cubegeometryb = new THREE.IcosahedronGeometry(2, 0);
 
 const cubematerialb = new THREE.MeshPhysicalMaterial({
-    color: 0xFF0000, // Rouge
+    color: 0xFF0000,
     transparent: true,
     opacity: 0.8,
     roughness: 0.2,
