@@ -119,8 +119,8 @@ const sensitivity = 1.0;
 const onMouseMove = (event) => {
     mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
     mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
-    targetRotation.x = mouse.x * sensitivity * Math.PI / 2;
-    targetRotation.y = mouse.y * sensitivity * Math.PI / 2;
+    targetRotation.x = mouse.x * sensitivity * Math.PI;
+    targetRotation.y = mouse.y * sensitivity * Math.PI;
 };
 
 window.addEventListener('mousemove', onMouseMove);
