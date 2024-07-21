@@ -114,7 +114,7 @@ const easingSpeed = 0.1;
 
 const mouse = new THREE.Vector2();
 const targetRotation = new THREE.Vector2(0, 0);
-const sensitivity = 0.1;
+const sensitivity = 1.0;
 
 const onMouseMove = (event) => {
     mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
