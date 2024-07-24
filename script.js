@@ -149,3 +149,18 @@ function resize() {
 window.addEventListener("resize", resize, false);
 
 animate();
+
+const clickIndicator = document.getElementById('click-indicator');
+
+const onMouseClick = (event) => {
+    const indicatorSize = 20;
+    clickIndicator.style.left = `${event.clientX}px`;
+    clickIndicator.style.top = `${event.clientY}px`;
+    clickIndicator.style.opacity = 1;
+
+    setTimeout(() => {
+        clickIndicator.style.opacity = 0;
+    }, 200);
+};
+
+window.addEventListener('click', onMouseClick);
